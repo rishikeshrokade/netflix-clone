@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+.The1440Window {
+    color: #222222;
+    max-width: 1280px;
+    min-width: 1280px;
+}
+
+@media (min-width: 1440px) {
+    .The1440Window {
+        max-width: 1440px;
+        min-width: 1440px;
+    }
+}
+
+.MainContainerStyle {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f1f4f8;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* 4===1rem */
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

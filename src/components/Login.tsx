@@ -7,12 +7,10 @@ import {
     updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
-import { addUser } from "../utils/reduxConfig/slices";
+import { addUser } from "../redux/userSlices";
 import { useDispatch } from "react-redux";
 
 const Login = () => {
-    const navigate = useNavigate();
     const dispatch = useDispatch();
 
     const email = useRef<HTMLInputElement>(null);
@@ -45,10 +43,10 @@ const Login = () => {
                     password.current?.value
                 )
                     .then(() => {
-                        navigate("/browse");
+                        // navigate("/browse");
                     })
                     .catch(() => {
-                        navigate("/");
+                        // navigate("/");
                     });
         } else {
             email.current?.value &&
@@ -89,10 +87,10 @@ const Login = () => {
                             .catch(() => {
                                 //
                             });
-                        navigate("/browse");
+                        // navigate("/browse");
                     })
                     .catch(() => {
-                        navigate("/");
+                        // navigate("/");
                     });
         }
     };
