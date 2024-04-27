@@ -3,7 +3,7 @@ export const VideoTitle: React.FC<{
     overview: string;
 }> = ({ title, overview }) => {
     return (
-        <div className="w-screen aspect-video absolute pt-[15%] px-8 text-white bg-gradient-to-r from-black">
+        <div className="w-screen  absolute pt-[15%] px-8 text-white bg-gradient-to-r from-black">
             <p className="text-4xl">{title ?? "-"}</p>
             <p className="text-[16px] py-4 w-1/4">{overview ?? "-"}</p>
             <div className="flex text-xl gap-4">

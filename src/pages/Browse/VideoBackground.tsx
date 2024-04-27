@@ -12,10 +12,10 @@ export const VideoBackground: React.FC<{
     useGetTrailerMovie(movieId);
 
     return (
-        <div className="w-screen aspect-video">
+        <div className="">
             <iframe
-                width={"100%"}
-                height={"100%"}
+                // width={"1240px"}
+                // height={"100%"}
                 src={
                     "https://www.youtube.com/embed/U2Qp5pL3ovA?autoplay=1&mute=1&si=" +
                     trailerMovie?.key
